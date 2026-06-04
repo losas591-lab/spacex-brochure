@@ -1,14 +1,19 @@
-export const metadata = {
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
   title: "SpaceX Mission Dashboard",
-  description: "A futuristic SpaceX-inspired brochure built by Destiny",
+  description: "A futuristic SpaceX-inspired mission dashboard built with Next.js, featuring rockets, missions, animations, and Elon Musk–themed UI.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, background: "black", color: "white" }}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
