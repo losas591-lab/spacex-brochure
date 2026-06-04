@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Starlink Constellation",
+    "description": "Global satellite internet coverage initiative.",
+    "status": "Active"
+  },
+  {
+    "name": "Mars Sample Return",
+    "description": "Collecting samples from the Red Planet.",
+    "status": "Planning"
+  },
+  {
+    "name": "Lunar Gateway",
+    "description": "Gateway for sustainable Moon missions.",
+    "status": "In Development"
+  }
+]
