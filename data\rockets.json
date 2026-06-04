@@ -1,0 +1,5 @@
+[
+  { "name": "Falcon 9", "description": "Reusable rocket changing spaceflight." },
+  { "name": "Falcon Heavy", "description": "Most powerful operational rocket." },
+  { "name": "Starship", "description": "Fully reusable system for Mars." }
+]
