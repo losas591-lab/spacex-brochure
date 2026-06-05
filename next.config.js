@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+  // ✅ remove swcMinify (deprecated in Next.js 16)
+  // ✅ add allowedDevOrigins if you want to open via your network IP
+  allowedDevOrigins: ['10.5.0.2'],
 };
 
 module.exports = nextConfig;
