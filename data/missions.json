@@ -1,17 +1,50 @@
 [
   {
     "name": "Starlink Constellation",
-    "description": "Global satellite internet coverage initiative.",
-    "status": "Active"
+    "description": "Deploying a network of over 5,000 satellites to provide high-speed, low-latency internet access to every corner of the globe — from remote villages to maritime vessels.",
+    "status": "Active",
+    "launched": "5,400+ satellites",
+    "coverage": "60+ countries",
+    "icon": "satellite"
   },
   {
-    "name": "Mars Sample Return",
-    "description": "Collecting samples from the Red Planet.",
-    "status": "Planning"
+    "name": "Mars Colonization",
+    "description": "The long-term vision to establish a self-sustaining city on Mars. Starship will carry the first crews, habitats, and life-support systems to the Red Planet.",
+    "status": "Planning",
+    "launched": "Cargo missions by 2028",
+    "coverage": "Interplanetary",
+    "icon": "planet"
   },
   {
-    "name": "Lunar Gateway",
-    "description": "Gateway for sustainable Moon missions.",
-    "status": "In Development"
+    "name": "Artemis Lunar Gateway",
+    "description": "Building the Gateway — a small space station orbiting the Moon — to support sustainable lunar exploration and serve as a staging point for deep-space missions.",
+    "status": "In Development",
+    "launched": "2025–2026 deployment",
+    "coverage": "Lunar orbit",
+    "icon": "moon"
+  },
+  {
+    "name": "Crew Dragon ISS Missions",
+    "description": "Regular crew rotation and cargo resupply missions to the International Space Station, demonstrating reliable human spaceflight capability.",
+    "status": "Active",
+    "launched": "12 crewed flights",
+    "coverage": "LEO / ISS",
+    "icon": "spacecraft"
+  },
+  {
+    "name": "Polaris Dawn",
+    "description": "A multi-day orbital mission featuring the first commercial spacewalk, testing new EVA suits and advancing human spaceflight capabilities at higher altitudes.",
+    "status": "Active",
+    "launched": "Completed Sept 2024",
+    "coverage": "700–1,400 km orbit",
+    "icon": "suit"
+  },
+  {
+    "name": "Starship Orbital Refueling",
+    "description": "Demonstrating in-orbit propellant transfer between Starship vehicles — a critical capability for any mission beyond low Earth orbit.",
+    "status": "In Development",
+    "launched": "Test flights underway",
+    "coverage": "LEO",
+    "icon": "fuel"
   }
 ]

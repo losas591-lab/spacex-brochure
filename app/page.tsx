@@ -1,126 +1,72 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import StatsBar from "@/components/StatsBar";
 import RocketCard from "@/components/RocketCard";
+import MissionCard from "@/components/MissionCard";
+import Footer from "@/components/Footer";
 import rocketsData from "@/data/rockets.json";
 import missionsData from "@/data/missions.json";
-
-const heroGradient = {
-  background: "radial-gradient(ellipse at 50% 0%, rgba(74,95,212,0.15) 0%, transparent 70%)",
-};
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main style={{ padding: "4rem 2rem 2rem", ...heroGradient }}>
-        <section style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h1
-            style={{
-              fontSize: "3.5rem",
-              marginBottom: "1rem",
-              textAlign: "center",
-              fontWeight: 800,
-              letterSpacing: "-0.02em",
-              lineHeight: 1.1,
-            }}
-          >
-            SpaceX Mission Dashboard
-          </h1>
-          <p
-            style={{
-              fontSize: "1.25rem",
-              textAlign: "center",
-              marginBottom: "4rem",
-              opacity: 0.7,
-              maxWidth: "600px",
-              marginLeft: "auto",
-              marginRight: "auto",
-              lineHeight: 1.6,
-            }}
-          >
-            A futuristic brochure inspired by Elon Musk and SpaceX.
+      <Hero />
+      <StatsBar />
+
+      <section className="section" id="rockets">
+        <div className="section-inner">
+          <p className="section-eyebrow">OUR FLEET</p>
+          <h2 className="section-title">Rockets</h2>
+          <p className="section-subtitle">
+            From the proven Falcon 9 to the transformative Starship, each
+            vehicle is engineered for reusability, reliability, and the next
+            frontier.
           </p>
-
-          <h2
-            id="rockets"
-            style={{
-              fontSize: "2rem",
-              marginBottom: "2rem",
-              fontWeight: 700,
-              borderBottom: "1px solid rgba(74, 95, 212, 0.3)",
-              paddingBottom: "0.5rem",
-            }}
-          >
-            Our Rockets
-          </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: "2rem",
-              marginBottom: "4rem",
-            }}
-          >
-            {rocketsData.map((rocket, index) => (
-              <RocketCard key={index} {...rocket} />
+          <div className="rocket-grid">
+            {rocketsData.map((rocket) => (
+              <RocketCard key={rocket.name} {...rocket} />
             ))}
           </div>
+        </div>
+      </section>
 
-          <h2
-            id="missions"
-            style={{
-              fontSize: "2rem",
-              marginBottom: "2rem",
-              fontWeight: 700,
-              borderBottom: "1px solid rgba(74, 95, 212, 0.3)",
-              paddingBottom: "0.5rem",
-            }}
-          >
-            Active Missions
-          </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: "2rem",
-            }}
-          >
-            {missionsData.map((mission, index) => (
-              <div
-                key={index}
-                style={{
-                  padding: "1.5rem",
-                  border: "1px solid rgba(74, 95, 212, 0.3)",
-                  borderRadius: "8px",
-                  background: "rgba(74, 95, 212, 0.08)",
-                  transition: "transform 0.2s, box-shadow 0.2s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-4px)";
-                  e.currentTarget.style.boxShadow =
-                    "0 8px 24px rgba(74, 95, 212, 0.25)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <h3 style={{ marginBottom: "0.5rem", color: "#4a9eff" }}>
-                  {mission.name}
-                </h3>
-                <p style={{ marginBottom: "0.5rem", lineHeight: 1.5 }}>
-                  {mission.description}
-                </p>
-                <p style={{ fontSize: "0.9rem", opacity: 0.6 }}>
-                  Status: {mission.status}
-                </p>
-              </div>
+      <section className="section section-alt" id="missions">
+        <div className="section-inner">
+          <p className="section-eyebrow">ACTIVE PROGRAMS</p>
+          <h2 className="section-title">Missions</h2>
+          <p className="section-subtitle">
+            A portfolio of missions spanning low Earth orbit, the Moon, and
+            the path to Mars.
+          </p>
+          <div className="mission-grid">
+            {missionsData.map((mission) => (
+              <MissionCard key={mission.name} {...mission} />
             ))}
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+
+      <section className="section cta-section">
+        <div className="section-inner" style={{ textAlign: "center" }}>
+          <h2 className="section-title">Join the Mission</h2>
+          <p className="section-subtitle" style={{ maxWidth: "540px", margin: "0 auto 2rem" }}>
+            SpaceX is hiring engineers, technicians, and dreamers who want to
+            help build a future where humanity explores the stars.
+          </p>
+          <a
+            href="https://www.spacex.com/careers"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            View Careers
+          </a>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

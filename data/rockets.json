@@ -1,5 +1,44 @@
 [
-  { "name": "Falcon 9", "description": "Reusable rocket changing spaceflight." },
-  { "name": "Falcon Heavy", "description": "Most powerful operational rocket." },
-  { "name": "Starship", "description": "Fully reusable system for Mars." }
+  {
+    "name": "Falcon 9",
+    "tagline": "The Workhorse of Space",
+    "description": "Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. As the first orbital-class reusable rocket, it has revolutionized spaceflight economics.",
+    "height": "70 m",
+    "diameter": "3.7 m",
+    "mass": "549,054 kg",
+    "payloadLeo": "22,800 kg",
+    "engines": "9 Merlin (1st stage)",
+    "reusable": true,
+    "launches": 230,
+    "successRate": "98.7%",
+    "image": "https://images.pexels.com/photos/23769/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Falcon Heavy",
+    "tagline": "The Most Powerful Operational Rocket",
+    "description": "Falcon Heavy is composed of three Falcon 9 nine-engine cores whose 27 Merlin engines together generate more than 5 million pounds of thrust at liftoff, equal to approximately eighteen 747 aircraft at full power. Only the Saturn V moon rocket, last flown in 1973, delivered more payload to orbit.",
+    "height": "70 m",
+    "diameter": "12.2 m",
+    "mass": "1,420,788 kg",
+    "payloadLeo": "63,800 kg",
+    "engines": "27 Merlin (3 cores)",
+    "reusable": true,
+    "launches": 10,
+    "successRate": "100%",
+    "image": "https://images.pexels.com/photos/73910/pexels-photo-73910.jpeg?auto=compress&cs=tinysrgb&w=800"
+  },
+  {
+    "name": "Starship",
+    "tagline": "The Path to Mars",
+    "description": "Starship is SpaceX's fully reusable, super heavy-lift launch vehicle — the tallest and most powerful rocket ever constructed. Designed to carry both crew and cargo on long-duration interplanetary flights, Starship will enable humanity's journey to the Moon, Mars, and beyond.",
+    "height": "121 m",
+    "diameter": "9 m",
+    "mass": "5,000,000 kg",
+    "payloadLeo": "150,000 kg",
+    "engines": "33 Raptor (Super Heavy)",
+    "reusable": true,
+    "launches": 6,
+    "successRate": "In Testing",
+    "image": "https://images.pexels.com/photos/8133832/pexels-photo-8133832.jpeg?auto=compress&cs=tinysrgb&w=800"
+  }
 ]
