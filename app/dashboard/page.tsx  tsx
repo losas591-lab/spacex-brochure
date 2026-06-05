@@ -1,0 +1,8 @@
+export default function DashboardPage() {
+  return (
+    <main className="flex flex-col items-center justify-center h-screen bg-black text-white">
+      <h1 className="text-4xl mb-6">🚀 SpaceX Mission Dashboard</h1>
+      <p className="text-lg">Welcome to your brokerage account. Track missions, rockets, and investments here.</p>
+    </main>
+  );
+}
